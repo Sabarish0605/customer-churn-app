@@ -47,9 +47,9 @@ with tab1:
         
         # Display summary statistics with clearer risk thresholds
         st.write("Predictions:")
-        high_risk = results[results['Churn_Probability'] > 0.8]
-        moderate_risk = results[(results['Churn_Probability'] >= 0.2) & (results['Churn_Probability'] <= 0.8)]
-        low_risk = results[results['Churn_Probability'] < 0.2]
+        high_risk = results[results['Churn_Probability'] > 0.7]
+        moderate_risk = results[(results['Churn_Probability'] >= 0.3) & (results['Churn_Probability'] <= 0.7)]
+        low_risk = results[results['Churn_Probability'] < 0.3]
         
         col1, col2, col3 = st.columns(3)
         with col1:
